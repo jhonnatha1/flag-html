@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms em html</h1>
+    <hr />
+
+    <form action="https://httpbin.org/anything" method="get" autocomplete="off">
+      <article>
+        <p>
+          <label for="nome:">Nome: </label><br />
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            size="20"
+            maxlength="10"
+            placeholder="inserir nome"
+            autocomplete="on"
+            autofocus
+            required
+          />
+          <span>preenchimento obrigatorio</span>
+          <!-- size muda o tamanho da barra, maxlenght limita a quantidade de caracteres -->
+          <!--required= preenchimento obrigatorio-->
+        </p>
+        <p>
+          <label for="apelido">Apelido</label><br />
+          <input type="text" id="apelido" name="apelido" />
+        </p>
+      </article>
+
+      <article>
+        <label for="comentarios">comentarios</label><br />
+        <textarea
+          name="comentarios"
+          id="comentarios"
+          cols="50"
+          rows="10"
+        ></textarea>
+      </article>
+
+      <article>
+        <h1>Que tipo de musica prefere?</h1>
+
+        <input type="radio" id="rock" name="musica" value="rock" />
+        <label for="rock">Rock</label><br />
+
+        <input type="radio" id="pop" name="musica" value="pop" />
+        <label for="pop">Pop</label><br />
+
+        <input type="radio" id="tecno" name="musica" value="tecno" />
+        <label for="tecno">Tecno</label><br />
+      </article>
+
+      <article>
+        <h1>Onde costuma ouvir musica?</h1>
+
+        <input type="checkbox" name="servico" id="spotify" value="spotify" />
+        <label for="servico">Spotify</label><br />
+
+        <input type="checkbox" name="servico" id="ipple" value="apple" />
+        <label for="servico">apple</label> <br />
+
+        <input type="checkbox" name="servico" id="youtube" value="youtube" />
+        <label for="servico">Youtube</label><br />
+      </article>
+
+      <article>
+        <h1> Em que dispositivos costuma ouvir musica
+        </h1>
+        <label for="device">dispositivos </label>
+        <select name="device" id="device">
+
+        <option value="mp3">MP3</option>
+        <option value="mp3">Android</option>
+        <option value="mp3">ps4</option>
+        <option value="mp3">ipod</option>
+        </select>
+      </article>
+
+      <article>
+        <h1> selecionar mais de uma opçao
+        </h1>
+        <label for="device">dispositivos </label><br>
+        <p>pode escolher multiplas opçoes com o "Ctrl"</p>
+        <select name="device2" id="device" multiple size="5">
+
+        <option value="mp3">MP3</option>
+        <option value="mp3">Android</option>
+        <option value="mp3">ps4</option>
+        <option value="mp3">ipod</option>
+        </select>
+      </article>
+
+
+      <article>
+        <h1>Qua o browser que mais utiliza?</h1>
+
+         <label for="browser">browser</label>
+        <input type "text" id="browser" name="browser"
+        list="browsers">
+         <datalist id="browsers">
+            <option>Google</option>
+            <option value="firefox">Firefox</option>
+            <option value="safari">Safari</option>
+            <option value="google">Google</option>
+         </datalist>
+      </article>
+<article>
+    <h1>opçoes de text input    </h1>
+    <input type="color" name="color"><br>
+    <input type="date" name="date"><br>
+    <input type="time" name="time"><br>
+    <input type="password" name="password"><br>
+    <input type="number" name="number"><br>
+    <input type="email" name="email"><br>
+    <input type="url" name="url"><br>
+    <input type="search" name="search"><br>
+    <input type="range" name="range" min="0" max="10" 
+    value="8" step="2"><br>
+
+
+</article>
+
+<input>
+    <input type="reset" value="ops enganei-me">
+    <input type="submit" value="enviar formulario">
+    <button>SUBMIT</button>
+
+</p>
+
+
+      <p>
+        <input type="submit" value="enviar formulario" />
+      </p>
+    </form>
+  </body>
+</html>
